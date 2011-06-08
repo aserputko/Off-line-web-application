@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OFF-LINE WEB APPLICATION</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <link rel="stylesheet" type="text/css" href="css/owa.css" />
+    <script type="text/javascript" src="js/libs/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="js/libs/underscore-min.js"></script>
+    <script type="text/javascript" src="js/libs/backbone-min.js"></script>
+    <script type="text/javascript" src="js/libs/json2.js"></script>
+    <script type="text/javascript" src="js/controllers/owa_presantation_controller.js"></script>
+    <script type="text/javascript" src="js/models/owa_presantation_model.js"></script>
+    <script type="text/javascript" src="js/views/owa_presantation_view.js"></script>
+    <script type="text/javascript" src="js/ready.js"></script>
+  </head>
+  <body>
+	test
+    <div id="home"></div>
+    <script type="text/html" id="title">
+        <div id="owa_title_header">
+            <div class="title_logo"></div>
+        </div>
+        <div class="title_column_1"></div>
+        <div class="title_column_2"></div>
+        <div class="title_column_3"></div>
+        <div class="title_column_4"></div>
+        <div class="next_page">
+            <div class="arrow_next"></div>
+        </div>
+        <div class="topic"><%= topic %></div>
+        <div id="owa_title_footer">
+            <div class="title_name"><%= name %></div>
+            <div class="title_data"><%= data %></div>
+        </div>
+    </script>
+    <script type="text/html" id="agenda">
+        <div id="owa_agenda_header">
+			<div class="content_topic"><%= title %></div>
+		</div>
+		<div class="content_column_1"></div>
+		<div class="content_column_2"></div>
+        <div class="next_page">
+            <div class="arrow_next"></div>
+        </div>
+        <div class="previous_page">
+            <div class="arrow_previous"></div>
+        </div>
+		<div id="owa_content_footer">
+            <div class="content_logo"></div>
+        </div>
+	</script>
+  </body>
+</html>
